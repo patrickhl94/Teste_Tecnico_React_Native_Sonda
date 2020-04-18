@@ -12,7 +12,7 @@
 
 Teste técnico em desenvolvimento mobile para ingresso na empresa Sonda
 
-O desafio deste teste, consiste em desenvolver um app com uma interface já prototipada pela empresa, onde os principais requisitos consistiam em utilizara React Navigation para a navegação, integração com funções nativas do smathphone (Camera) e requisições HTTP em API pública.
+O desafio deste teste, consiste em desenvolver um app com uma interface já prototipada pela empresa, onde os principais requisitos consistiam em utilizar o React Navigation para a navegação, integração com funções nativas do smathphone (Câmera) e requisições HTTP em API pública.
 </h3>
 
 ---
@@ -20,11 +20,11 @@ O desafio deste teste, consiste em desenvolver um app com uma interface já prot
 # **App desenvolvido em [React-Native](https://reactnative.dev/) - CLI**
 
 <h3 align="center">
-  Nesta aplicação, proucurei usar os recursos mais atualizados e estaveis do ecossistema React, segue abaixo as proncipais depedencias instaladas:
+  Nesta aplicação, proucurei utilizar os recursos mais atualizados e estáveis do ecossistema React, segue abaixo as principais dependências instaladas:
 </h3>
 
 ````JSON
-depedencias {
+dependencies {
   "react-native-camera": "^3.23.1",
   "react-native-gesture-handler": "^1.6.1",
   "prop-types": "^15.7.2",
@@ -35,7 +35,7 @@ depedencias {
   "react-native-vector-icons": "^6.6.0",
   "styled-components": "^5.1.0"
 },
-devDepedencies: {
+devDependencies: {
   "eslint": "^6.8.0",
   "prettier": "^2.0.4",
 }
@@ -46,7 +46,7 @@ devDepedencies: {
 
   ## Estilização dos componentes
 
- #### Tambem optei por utilizar o `styled-componets/native` para estilizar meus componentes, considerando a facilidade que ele nos dar para inplementar variáveis e funções na estilização. Com ele ficou bem mais fácil e prático criar dois temas diferentes para esta aplicação (Temas `dark` e `light`), a seleção destes temas é automática de acordo com opção de tema do usuário, selecionada nas configurações do smartphone.
+ #### Também optei por utilizar o `styled-componets/native`, para estilizar meus componentes, considerando a facilidade que ele nos dar em inplementar variáveis e funções na estilização. Com ele ficou bem mais fácil e prático criar dois temas diferentes para esta aplicação (temas `dark` e `light`), a seleção destes temas é automática de acordo com opção de tema do usuário, selecionada nas configurações do smartphone.
 
 ---
 
@@ -80,14 +80,14 @@ react-native start
 
 ## Estrutura principal da aplicação (pasta `./src`):
 - `src/index.js` -> Arquivo raiz principal da aplicação.
-- `src/assets/images` -> imagens e icones do projeto
-- `src/pages/` -> páginas do projeto
-- `src/pages/Camera/` -> página de Camera do app composta pelo `inde.js` e `styles.js`
-- `src/pages/Home` -> página Home do app composta pelo `inde.js` e `styles.js`
-- `src/pages/Login` -> página de Login do app composta pelo `inde.js` e `styles.js`
-- `src/pages/Mais` -> página de Mais do app composta pelo `inde.js` e `styles.js`
-- `src/routes/index.routes.js` -> arquivo de configuração de navegação principal e inicial do tipo Stack Navigation
-- `src/routes/TabRoutes/tab.routes.js` -> arquivo de configuração de navegação secundário que se encadeia na rota inicial do App. Essa rota é do tipo Tab Navigation
+- `src/assets/images` -> Imagens e icones do projeto
+- `src/pages/` -> Páginas do projeto
+- `src/pages/Camera/` -> Página de `Câmera` do app composta pelo `inde.js` e `styles.js`
+- `src/pages/Home` -> Página `Home` do app composta pelo `inde.js` e `styles.js`
+- `src/pages/Login` -> Página de `Login` do app composta pelo `inde.js` e `styles.js`
+- `src/pages/Mais` -> Página de `Mais` do app composta pelo `inde.js` e `styles.js`
+- `src/routes/index.routes.js` -> Arquivo de configuração de navegação principal e inicial do tipo Stack Navigation
+- `src/routes/TabRoutes/tab.routes.js` -> Arquivo de configuração de navegação secundário, que se encadeia na rota inicial do App. Essa rota é do tipo Tab Navigation
 - `src/services/api.js` -> Arquivo de chamada a api do back-end. Adicione o endereço do servidor back-end da aplicação à `baseURL: '',`
 ```javascript
 import axios from 'axios';
